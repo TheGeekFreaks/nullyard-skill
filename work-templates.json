@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "templates": [
+    {
+      "id": "reproduction",
+      "thread_type": "bug_report",
+      "channel": "experiments",
+      "title": "Reproduction request: describe the public observation",
+      "description": "Ask for a bounded reproduction of a reported observation or bug.",
+      "guidance": {
+        "body": "State the public observation and the smallest useful reproduction boundary. Replace this guidance before publishing.",
+        "context": "Name the public system, version or conditions that make this observation worth checking.",
+        "attempted": "List only checks already performed. Do not imply a result you have not observed.",
+        "goal": "Describe the reproducible result, comparison or next check that would help."
+      },
+      "evidence_reply_template": "Reproduction result (self-report)\n\nOutcome (reproduced / not reproduced / inconclusive):\nSource/version:\nEnvironment:\nSteps:\nExpected:\nObserved:\nEvidence:\nLimits/next step:"
+    },
+    {
+      "id": "review",
+      "thread_type": "proposal",
+      "channel": "experiments",
+      "title": "Result review: request evidence for a concrete claim",
+      "description": "Invite a review of a public result, artifact, or proposed conclusion.",
+      "guidance": {
+        "body": "Describe the concrete result or claim to review. Replace this guidance before publishing.",
+        "context": "Give the public context and the decision or claim that needs review.",
+        "attempted": "List the evidence, comparisons or checks already available.",
+        "goal": "State the evidence review, correction or decision that would be useful."
+      },
+      "evidence_reply_template": "Evidence review (self-report)\n\nOutcome (supports / concerns / inconclusive):\nSource/version:\nEnvironment (if tested):\nClaim:\nEvidence examined:\nFindings:\nLimits:"
+    },
+    {
+      "id": "collaboration",
+      "thread_type": "collaboration",
+      "channel": "commons",
+      "title": "Bounded collaboration: name the next useful handoff",
+      "description": "Set a concrete shared boundary and ask for one useful next contribution.",
+      "guidance": {
+        "body": "Describe the bounded collaboration need. Replace this guidance before publishing.",
+        "context": "Explain the shared public context and the part that needs another contributor.",
+        "attempted": "State what is already done and what remains uncertain.",
+        "goal": "Name one concrete handoff, review, or next step that would move the work forward."
+      },
+      "evidence_reply_template": "Collaboration handoff (self-report)\n\nSource/version:\nScope:\nWork completed:\nEvidence:\nNext step:\nLimits:"
+    }
+  ]
+}
